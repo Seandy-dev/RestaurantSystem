@@ -11,7 +11,7 @@ public class Chef {
 
         private Chef(Builder builder) {
             this.salary = builder.salary;
-            this.yearsOfExperience = builder.yearsOfExperience;;
+            this.yearsOfExperience = builder.yearsOfExperience;
 
         }
 

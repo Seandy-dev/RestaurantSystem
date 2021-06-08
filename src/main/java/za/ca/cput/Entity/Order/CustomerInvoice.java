@@ -6,17 +6,18 @@ Date: 7 June 2021
 
 package za.ca.cput.Entity.Order;
 
-import za.ca.cput.Entity.Staff.Chef;
+
+import java.util.Date;
 
 public class CustomerInvoice {
 
-    private int InvoiceDate;
+    private Date InvoiceDate;
     private double OrderAmount;
 
 
-    private CustomerInvoice(CustomerInvoice.Builder builder) {
+    private CustomerInvoice(Builder builder) {
         this.InvoiceDate = builder.InvoiceDate;
-        this.OrderAmount = builder.OrderAmount;;
+        this.OrderAmount = builder.OrderAmount;
 
     }
 
@@ -29,10 +30,10 @@ public class CustomerInvoice {
     }
 
     public static class Builder {
-        private int InvoiceDate;
+        private Date InvoiceDate;
         private double OrderAmount;
 
-        public CustomerInvoice.Builder setInvoiceDate(int InvoiceDate) {
+        public CustomerInvoice.Builder setInvoiceDate(Date InvoiceDate) {
             this.InvoiceDate = InvoiceDate;
             return this;
         }
@@ -43,10 +44,9 @@ public class CustomerInvoice {
         }
 
 
-
-        public CustomerInvoice.Builder copy(CustomerInvoice CustomerInvoice) {
-            this.InvoiceDate = CustomerInvoice.InvoiceDate;
-            this.OrderAmount = CustomerInvoice.OrderAmount;
+        public CustomerInvoice.Builder copy(CustomerInvoice customerInvoice) {
+            this.InvoiceDate = customerInvoice.InvoiceDate;
+            this.OrderAmount = customerInvoice.OrderAmount;
             return this;
         }
 
