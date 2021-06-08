@@ -6,7 +6,6 @@ package za.ca.cput.Entity.StaffDetails;
  */
 
 import java.util.Date;
-import java.util.Locale;
 
 public class Demographic {
     private String gender;
@@ -24,7 +23,7 @@ public class Demographic {
                 ", birthDate=" + birthDate +
                 '}';
     }
-
+//Inner class
     public static class Builder{
         private String gender;
         private Date birthDate;
