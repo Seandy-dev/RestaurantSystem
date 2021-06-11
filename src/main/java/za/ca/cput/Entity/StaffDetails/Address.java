@@ -13,7 +13,7 @@ public class Address {
     private int streetNumber, postalCode;
 
 
-    public Address(Builder builder) {
+    private Address(Builder builder) {
         this.addressId = builder.addressId;
         this.city = builder.city;
         this.country = builder.country;
@@ -37,7 +37,7 @@ public class Address {
                 '}';
     }
 
-    private static class Builder {
+    public static class Builder {
 
         private String addressId, streetName,
                 suburb, city, country;
