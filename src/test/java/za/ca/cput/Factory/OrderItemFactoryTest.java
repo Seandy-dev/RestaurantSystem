@@ -13,24 +13,22 @@ import static org.junit.jupiter.api.Assertions.*;
    Date : 11 June 2021
 */
 
-class OrderItemFactoryTest
-{
-     OrderItem OrderOne;
-     OrderItem OrderTwo;
-     OrderItem OrderThree;
+class OrderItemFactoryTest {
+    OrderItem OrderOne;
+    OrderItem OrderTwo;
+    OrderItem OrderThree;
 
     @BeforeEach
-    void setUp()
-    {
+    void setUp() {
         OrderOne = OrderItemFactory.createOrderItem(12);
         OrderTwo = OrderItemFactory.createOrderItem(15);
-        OrderThree=OrderOne;
+        OrderThree = OrderOne;
     }
 
     @Test
     void testIdentity()              //Tests Identity
     {
-        assertSame(OrderOne,OrderThree);
+        assertSame(OrderOne, OrderThree);
     }
 
     @Test
@@ -45,6 +43,7 @@ class OrderItemFactoryTest
         assertNotEquals(OrderOne, OrderTwo);
     }
 
+
     @Timeout(3)
     @Test
     void testTimeoutLoop() throws Exception      // Tests timeout after 3 seconds
@@ -54,11 +53,11 @@ class OrderItemFactoryTest
             Thread.sleep(1000);
         }
     }
-    @Disabled()
-    @Test
-    void TestDisabled()
-    {
-        System.out.println("Test was disabled by student 219168296.");
-    }
 
+    @Test
+    @Disabled("Test disabled")
+    void testDisabled()
+    {
+        assertEquals(OrderOne, OrderThree);
+    }
 }

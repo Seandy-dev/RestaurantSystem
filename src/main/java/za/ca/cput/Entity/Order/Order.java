@@ -1,6 +1,5 @@
 package za.ca.cput.Entity.Order;
 
-
 /* Order.java
    Entity for Order
    Author : Devon Sherwyn May (219168296)
