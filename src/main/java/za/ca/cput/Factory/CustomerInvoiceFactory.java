@@ -3,7 +3,7 @@ package za.ca.cput.Factory;
 CustomerInvoiceFactory.java
 Factory for the customer Invoice
 Author: Emihle Menzo 218337035
-Date: 9 June
+Date: 9 June 2021
  */
 
 import za.ca.cput.Entity.Order.CustomerInvoice;

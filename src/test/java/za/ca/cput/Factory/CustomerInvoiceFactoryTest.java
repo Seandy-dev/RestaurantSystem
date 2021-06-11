@@ -3,7 +3,7 @@ package za.ca.cput.Factory;
 CustomerInvoiceFactoryTest.java
 Factory for the customerInvoiceTest
 Author: Emihle Menzo 218337035
-Date: 9 June
+Date: 9 June 2021
  */
 
 import org.junit.jupiter.api.*;

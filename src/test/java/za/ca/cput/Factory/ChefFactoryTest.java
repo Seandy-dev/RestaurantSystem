@@ -46,7 +46,7 @@ class ChefFactoryTest {
     }
 
     @Test
-    @DisplayName(" Should be a failing test")
+    @DisplayName("The test is failing")
     public void shouldShowSimpleAssertion() {
         Assertions.assertEquals(salary, yearsOfExperience);
 
