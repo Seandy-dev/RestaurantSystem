@@ -9,13 +9,17 @@ public class Chef {
         private double salary;
         private int yearsOfExperience;
 
-        private Chef(Builder builder) {
+        public Chef(Builder builder) {
             this.salary = builder.salary;
             this.yearsOfExperience = builder.yearsOfExperience;
 
         }
 
-        @Override
+    public Chef() {
+        //Constructor for the chefFactoryTest class
+    }
+
+    @Override
         public String toString() {
             return "Chef{" +
                     "salary='" + salary + '\'' +

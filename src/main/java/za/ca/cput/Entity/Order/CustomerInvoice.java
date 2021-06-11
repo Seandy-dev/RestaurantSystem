@@ -7,33 +7,35 @@ Date: 7 June 2021
 package za.ca.cput.Entity.Order;
 
 
-import java.util.Date;
-
 public class CustomerInvoice {
 
-    private Date InvoiceDate;
+    private long InvoiceDate;
     private double OrderAmount;
 
 
-    private CustomerInvoice(Builder builder) {
+    public CustomerInvoice(Builder builder) {
         this.InvoiceDate = builder.InvoiceDate;
         this.OrderAmount = builder.OrderAmount;
 
     }
 
+    public CustomerInvoice() {
+        //Constructor for the CustomerInvoiceFactoryTest class
+    }
+
     @Override
     public String toString() {
-        return "CustomerInvoice{" +
-                "InvoiceDate='" + InvoiceDate + '\'' +
-                ", OrderAmount='" + OrderAmount + '\'' +
+        return " CustomerInvoice{ " +
+                " InvoiceDate = '" + InvoiceDate + '\'' +
+                ", OrderAmount = '" + OrderAmount + '\'' +
                 '}';
     }
 
     public static class Builder {
-        private Date InvoiceDate;
+        private long InvoiceDate;
         private double OrderAmount;
 
-        public CustomerInvoice.Builder setInvoiceDate(Date InvoiceDate) {
+        public CustomerInvoice.Builder setInvoiceDate(long InvoiceDate) {
             this.InvoiceDate = InvoiceDate;
             return this;
         }
