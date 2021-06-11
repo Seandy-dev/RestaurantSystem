@@ -54,11 +54,10 @@ class OrderFactoryTest
         }
     }
 
-    @Disabled()
     @Test
-    void TestDisabled()
+    @Disabled("Test disabled")
+    void testDisabled()
     {
-        System.out.println("Test was disabled by student 219168296.");
+        assertEquals(Order1, Order3);
     }
-
 }
