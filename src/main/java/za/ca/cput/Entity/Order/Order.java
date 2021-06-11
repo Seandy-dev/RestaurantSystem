@@ -1,5 +1,5 @@
 package za.ca.cput.Entity.Order;
-import java.util.Date;
+
 /* Order.java
    Entity for Order
    Author : Devon Sherwyn May (219168296)
@@ -8,7 +8,7 @@ import java.util.Date;
 public class Order
 {
     private int OrderNumber;
-    Date OrderDate;
+    private Long OrderDate;
 
     private Order(Builder builder)
     {
@@ -28,7 +28,7 @@ public class Order
     public static class Builder
     {
         private int OrderNumber;
-        Date OrderDate;
+        private long OrderDate;
 
         public Builder setOrderNumber(int orderNumber)
         {
@@ -36,7 +36,7 @@ public class Order
             return this;
         }
 
-        public Builder setOrderDate(Date orderDate)
+        public Builder setOrderDate(long orderDate)
         {
             this.OrderDate = orderDate;
             return this;
