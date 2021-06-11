@@ -6,8 +6,6 @@ package za.ca.cput.Factory;
 */
 import za.ca.cput.Entity.StaffDetails.Demographic;
 
-import java.util.Date;
-
 public class DemographicFactory {
     public  static Demographic createDemographic(String gender, long birthDate) {
 

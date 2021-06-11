@@ -5,8 +5,6 @@ package za.ca.cput.Entity.StaffDetails;
    Date : 08 June
  */
 
-import java.util.Date;
-
 public class Demographic {
     private String gender;
     private long birthDate;

@@ -1,8 +1,6 @@
 package za.ca.cput.Factory;
 import za.ca.cput.Entity.StaffDetails.EmployeeAddress;
 
-import java.util.Date;
-
 /* EmployeeAddress.java
  Entity for EmployeeAddressFactory
  Author: Nikitha Mbokotwana (218337906)

@@ -1,6 +1,4 @@
 package za.ca.cput.Factory;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import za.ca.cput.Entity.StaffDetails.EmployeeAddress;
 
@@ -11,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class EmployeeAddressFactoryTest {
   private EmployeeAddress employeeAddress;
     private EmployeeAddress addressId;
-
+//Factory test
     @Test
     public void createEmployeeAddress()
     {

@@ -13,6 +13,7 @@ class DemographicFactoryTest {
  private Demographic gender;
  private Demographic birthDate;
 
+ //Factory test
     @Test
     public void createDemographic() {
 
@@ -38,7 +39,7 @@ class DemographicFactoryTest {
      TimeUnit.SECONDS.sleep(10);
      System.out.println("Time out");
  }
- //Test Disable
+ //Test Disabled
  @Test
  void temporarilyDisabledTest() throws Exception{
         System.out.println(" Disabling test but still under development ");
