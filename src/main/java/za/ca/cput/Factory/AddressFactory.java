@@ -13,16 +13,15 @@ public class AddressFactory {
                                         String city, String country , int postalCode )
     {
         addressId = GenericHelper.genericHelper();
-        Address address = new Address.Builder()
+        Address.Builder address = new Address.Builder()
                 .setAddressId(addressId)
                 .setStreetNumber(streetNumber)
                 .setStreetName(streetName)
                 .setSuburb(suburb)
                 .setCity(city)
                 .setCountry(country)
-                .setPostalCode(postalCode)
-                .build();
+                .setPostalCode(postalCode);
 
-        return address;
+        return address.build();
     }
 }
