@@ -5,11 +5,9 @@ package za.ca.cput.Entity.StaffDetails;
    Date : 08 June
  */
 
-import java.util.Date;
-
 public class Demographic {
     private String gender;
-    private Date birthDate;
+    private long birthDate;
 
 
     private Demographic(Builder builder) {
@@ -26,14 +24,14 @@ public class Demographic {
 //Inner class
     public static class Builder{
         private String gender;
-        private Date birthDate;
+        private long birthDate;
 
         public Builder setGender(String gender) {
             this.gender = gender;
             return this;
         }
 
-        public Builder setBirthDate(Date birthDate) {
+        public Builder setBirthDate(long birthDate) {
             this.birthDate = birthDate;
             return this;
         }

@@ -35,7 +35,7 @@ public class Employee {
         private String firstName;
         private String lastName;
 
-        public Builder setEmployeeID(int employeeID) {
+        public Builder setEmployeeID(String employeeID) {
             this.employeeID = employeeID;
             return this;
         }

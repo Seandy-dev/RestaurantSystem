@@ -1,47 +1,37 @@
 package za.ca.cput.Factory;
 
-/* TableFactoryTest.java
- Entity for TableFactoryTest
+/* WaiterFactoryTest.java
+ Entity for WaiterFactoryTest
  Author: Sindiswa Nomusa Mbhele (219279616)
  Date: 11 June 2021
 */
-
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import za.ca.cput.Entity.Order.Table;
+import za.ca.cput.Entity.Staff.Waiter;
 
 import static java.time.Duration.ofMillis;
 import static org.junit.jupiter.api.Assertions.*;
 
+class WaiterFactoryTest {
 
-class TableFactoryTest {
-
-    Table tableNumber1, tableNumber2;
-
-    @BeforeEach
-    public void setUp() {
-        tableNumber1 = new Table();
-        tableNumber2 = new Table();
-        tableNumber1 = tableNumber2;
-    }
+    Waiter hourlyWage, hours, tip;
 
         @Test
-    public void createTable() {
-        Table tbl = TableFactory.createTable(2, true);
+    public void createWaiter() {
+        Waiter tbl = WaiterFactory.createWaiter( 21, 2, 90);
         System.out.println(tbl);
     }
     @Test
     public void testEquality(){
 
-        Assertions.assertEquals(tableNumber1, tableNumber2);
+        Assertions.assertEquals(tip, hours);
     }
 
 
     @Test
     public void testIdentity() {
-        assertSame(tableNumber1, tableNumber2);
+        assertSame(tip, hours);
     }
 
     @Test
@@ -56,4 +46,5 @@ class TableFactoryTest {
     public  void testDisable(){
         fail("The test should be ignored because it is being developed. ");
     }
+
 }

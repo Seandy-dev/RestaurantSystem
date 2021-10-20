@@ -11,6 +11,10 @@ public class Table {
     private int tableNumber;
     private boolean occupied;
 
+    public Table() {
+
+    }
+
     public int getTableNumber(){return tableNumber; }
 
     public boolean getOccupied(){
