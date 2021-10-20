@@ -9,19 +9,21 @@ import za.ca.cput.Entity.StaffDetails.Address;
 import za.ca.cput.Util.GenericHelper;
 
 public class AddressFactory {
-    public static Address createAddress(String addressId, int streetNumber, String streetName,String suburb,
-                                        String city, String country , int postalCode )
+    public static Address createAddress(String streetName , String suburb , String city ,
+                                        String country ,  int streetNumber , int postalCode )
     {
-        addressId = GenericHelper.genericHelper();
-        Address.Builder address = new Address.Builder()
+       String addressId = GenericHelper.genericHelper();
+        Address address= new Address.Builder()
                 .setAddressId(addressId)
                 .setStreetNumber(streetNumber)
                 .setStreetName(streetName)
                 .setSuburb(suburb)
                 .setCity(city)
                 .setCountry(country)
-                .setPostalCode(postalCode);
+                .setPostalCode(postalCode)
+                .build();
 
-        return address.build();
+        return address;
     }
+
 }

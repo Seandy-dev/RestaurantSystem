@@ -16,8 +16,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AddressFactoryTest {
 
-    Address address = AddressFactory.createAddress("", 330,"Mkonto",
-            "Khayelitsha" , "Cape Town", "South Africa", 7784);
+    Address address = AddressFactory.createAddress("e331 Mkhonto Crescent", "Khayelitsha"
+            , "Cape Town" , "South Africa" , 1 , 7784);;
     @Test
     public void addressTest()
     {
